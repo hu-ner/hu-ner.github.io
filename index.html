@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>HUNER - Tagger</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">HUNER</a></h1>
+          <h2>An of the shelf tagger for biomedical entities</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="index.html">Tagger</a></li>
+          <li><a href="corpora.html">Corpora</a></li>
+          <li><a href="contact.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>The HUNER tagger</h1>
+        We provide the HUNER tagger as an easy to use, integrated <a href="https://www.docker.com/">Docker</a> container.
+        HUNER is able to tag the five entity types Cell lines, Chemicals, Diseases, Genes/Proteins and Species.
+        The tagger and usage instructions can be obtained from the <a href="https://github.com/hu-ner/huner">HUNER Git repository</a>.
+        Model files are available at <a href=https://drive.google.com/open?id=1Y6vdSymGN5QEeEITPF2zZj4qUcoDWvXf">this folder</a>.
+        <br><br>
+        The following table gives an overview of the performance (as F1-score) of HUNER on the <a href="http://bionlp-corpora.sourceforge.net/CRAFT/">CRAFT corpus</a> and a comparison to the state of the art tools <a href="https://www.ncbi.nlm.nih.gov/research/bionlp/Tools/gnormplus/">GNormPlus</a> und <a href="https://www.ncbi.nlm.nih.gov/pubmed/25810774">tmChem</a>.
+        <table style="width:100%">
+			<tr>
+				<th>Entity type</th>
+				<th>SotA</th> 
+				<th>HUNER</th>
+			</tr>
+			<tr>
+				<td>Chemicals</td>
+				<td> 38.25% </td> 
+				<td> 42.95% </td>
+			</tr>
+			<tr>
+				<td>Genes/Proteins</td>
+				<td> 49.95% </td> 
+				<td> 59.37% </td>
+			</tr>
+			<tr>
+				<td>Species</td>
+				<td> 77.29% </td> 
+				<td> 84.40% </td>
+			</tr>
+		</table>
+		If you use the tool in your research, please <a href="contact.html">cite us</a>.
+      </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+      <p>Copyright &copy; WBI 2019 |  Website template created by <a href="http://www.html5webtemplates.co.uk">http://www.html5webtemplates.co.uk</a></p>
+    </div>
+  </div>
+</body>
+</html>

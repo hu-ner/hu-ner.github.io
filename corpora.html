@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>HUNER - Corpora</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">HUNER</a></h1>
+          <h2>An of the shelf tagger for biomedical entities</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Tagger</a></li>
+          <li class="selected"><a href="corpora.html">Corpora</a></li>
+          <li><a href="contact.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div id="content">
+        <h1>Corpora</h1>
+        We provide an integrated tool to obtain and preprocess 35 NER corpora. The script contains the following steps:
+        <ul>
+			<li>Download the corpora</li>
+			<li>Conversion of the corpora</li>
+			<li>Sentence splitting, tokenization and POS tagging (if not given)</li>
+			<li>Deterministic split into training, development and test set with ratio 60:10:30</li>
+        </ul>
+        The tool and further documentation can be found at <a href="https://github.com/hu-ner/huner/tree/master/ner_scripts">this git repository</a>.
+        For further details on the corpora and the preprocessing, please consult <a href="publication.pdf">the accompanying publication</a>.
+        <br><br>
+        If you use the tool in your research, please <a href="contact.html">cite us</a>.
+      </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+      <p>Copyright &copy; WBI 2019 |  Website template created by <a href="http://www.html5webtemplates.co.uk">http://www.html5webtemplates.co.uk</a></p>
+    </div>
+  </div>
+</body>
+</html>
